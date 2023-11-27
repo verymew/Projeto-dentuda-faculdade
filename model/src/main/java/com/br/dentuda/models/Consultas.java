@@ -1,4 +1,4 @@
-package com.br.dentuda.dentuda.model;
+package com.br.dentuda.models;
 
 import jakarta.persistence.*;
 

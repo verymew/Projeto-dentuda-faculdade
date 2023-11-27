@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
 
@@ -12,7 +13,10 @@
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
-   <ImageView fx:id="myImage" fitHeight="310.0" fitWidth="766.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="myImage" fitHeight="310.0" fitWidth="766.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../../java/com/br/dentuda/dentudaview/img/taylor.png" />
+      </image></ImageView>
    <Label text="Usuário" />
    <TextField minHeight="30.0" minWidth="2.0" prefHeight="30.0" prefWidth="374.0" />
 
