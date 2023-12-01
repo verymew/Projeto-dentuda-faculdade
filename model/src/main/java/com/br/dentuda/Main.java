@@ -12,9 +12,15 @@ import org.hibernate.SessionFactory;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    public static void main(String[] args) {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("application");
-        factory.createEntityManager();
+    public static void main(String[] args) throws Exception {
+        UsuarioDao dao = new UsuarioDao();
+
+        Usuario novo = new Usuario();
+        novo.setNome("ju");
+        novo.setId(1L);
+
+        Usuario teste = dao.buscarPorId(Usuario.class, 1L);
+        System.out.println(teste.getNome());
 
 
     }

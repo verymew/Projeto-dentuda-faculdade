@@ -1,12 +1,13 @@
 package com.br.dentuda.models;
 
+import com.br.dentuda.models.dao.EntidadeBase;
 import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "consultas")
-public class Consultas {
+public class Consultas implements EntidadeBase {
     @Id
     @GeneratedValue
     @Column(name = "id")
